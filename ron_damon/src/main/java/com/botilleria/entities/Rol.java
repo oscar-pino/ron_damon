@@ -1,4 +1,4 @@
-package com.botilleria.models;
+package com.botilleria.entities;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -37,6 +37,6 @@ public class Rol {
 	@Override
 	public String toString() {
 		return "Rol [idRol=" + idRol + ", nombre=" + nombre + "]";
-	}
-
+	}	
 }
+

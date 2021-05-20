@@ -19,7 +19,7 @@
 <nav class="navbar navbar-expand-sm justify-content-center bg-dark navbar-dark mt-5">
   <!-- Brand/logo -->
   <a class="navbar-brand" href="/">
-    <img id="logo"  src="/resources/img/logo.jpg" alt="esto es un logo" class="rounded-circle">
+    <img id="logo"  src="/resources/img/logo.png" alt="esto es un logo" class="rounded-circle">
   </a>
   
   <!-- Links -->
@@ -69,7 +69,7 @@
 	<form:select path="imagen" cssClass="desplegable inline w-75 h-25" id="selProducto">
 		<form:option value="0" label="seleccione bebestible"/>
 		<form:options items="${imagenes}" itemValue="idImagen" itemLabel="nombre" />
-	</form:select><img  class="borde ml-5" width="10%" height="12%" id="imgProducto" src="/resources/img/tragos.jpg"><form:errors path="imagen" cssClass="error"></form:errors>
+	</form:select><img  class="borde ml-5" width="10%" height="12%" id="imgProducto" src="/resources/img/tragos.png"><form:errors path="imagen" cssClass="error"></form:errors>
 </div>
 <form:button id="btnRegistrarProducto">registrar</form:button>
 <input type="reset" value="vaciar" id="btnVaciar"/>

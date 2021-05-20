@@ -19,7 +19,7 @@
 <nav class="navbar navbar-expand-sm justify-content-center bg-dark navbar-dark mt-5">
   <!-- Brand/logo -->
   <a class="navbar-brand" href="/">
-    <img id="logo"  src="/resources/img/logo.jpg" alt="esto es un logo" class="rounded-circle">
+    <img id="logo"  src="/resources/img/logo.png" alt="esto es un logo" class="rounded-circle">
   </a>
   
   <!-- Links -->

@@ -1,4 +1,4 @@
-package com.botilleria.models;
+package com.botilleria.entities;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -60,5 +60,4 @@ public class Usuario {
 	public String toString() {
 		return "Usuario [idUsuario=" + idUsuario + ", user=" + user + ", password=" + password + ", rol=" + rol + "]";
 	}
-
 }

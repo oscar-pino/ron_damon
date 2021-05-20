@@ -1,4 +1,4 @@
-package com.botilleria.controller;
+package com.botilleria.controllers;
 
 import java.io.IOException;
 import java.util.GregorianCalendar;
@@ -15,8 +15,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 
-import com.botilleria.models.Imagen;
-import com.botilleria.models.Producto;
+import com.botilleria.entities.Imagen;
+import com.botilleria.entities.Producto;
 import com.botilleria.repositories.IImagenRepository;
 import com.botilleria.repositories.IProductoRepository;
 
@@ -29,16 +29,14 @@ public class HomeController {
 	@Autowired
 	private IImagenRepository ir;	
 	
-	private static int contador=0;
-	
 	@GetMapping("/")
 	public String index(Model model) {	
-		/*	
+			
 			if(ir.count()==0){
 				
 				for(Imagen i : ingresarImagenes())
 					ir.save(i);
-			} */
+			}
 					
 		
 		return "index";
@@ -68,10 +66,13 @@ public class HomeController {
 	}	
 	
 	@GetMapping("listar")
-	public String listar(Model model) {			
+	public String listar(Model model) {		
+		
+		
+		
 		model.addAttribute("productos", pr.findAll());		
 		
-		model.addAttribute("comienzo", (contador>0)?false:true);
+		//model.addAttribute("comienzo", (contador>0)?false:true);
 			return "listarProductos";
 	}
 	
@@ -156,7 +157,10 @@ private Imagen[] ingresarImagenes(){
 				new Imagen("gaseosa"),
 				new Imagen("jugo"),
 				new Imagen("ron"),
-				new Imagen("vino")
+				new Imagen("vino"),
+				new Imagen("sprite"),
+				new Imagen("fanta"),
+				new Imagen("papaya")
 				
 		};
 			
@@ -187,11 +191,11 @@ private Imagen[] ingresarImagenes(){
 				//nombre,marca,stock,precio,date(año,mes,dia),imagen
 				
 				new Producto("cocacola","ccu",12,1200,getFecha().getGregorianChange(),ir.findAll().get(2)),				
-				new Producto("fanta","ccu",12,1200,getFecha().getGregorianChange(),ir.findAll().get(2)),
-				new Producto("sprite","ccu",12,1200,getFecha().getGregorianChange(),ir.findAll().get(2)),
+				new Producto("fanta","ccu",12,1200,getFecha().getGregorianChange(),ir.findAll().get(7)),
+				new Producto("sprite","ccu",12,1200,getFecha().getGregorianChange(),ir.findAll().get(6)),
 				new Producto("cachantun","cachantun",12,1200,getFecha().getGregorianChange(),ir.findAll().get(1)),
-				new Producto("gato","santa rita",15,1500,getFecha().getGregorianChange(),ir.findAll().get(4)),			
-				new Producto("papaya","whatss",12,1200,getFecha().getGregorianChange(),ir.findAll().get(5)),
+				new Producto("vino","gato",15,1500,getFecha().getGregorianChange(),ir.findAll().get(5)),			
+				new Producto("papaya","whatss",12,1200,getFecha().getGregorianChange(),ir.findAll().get(8)),
 				new Producto("blackron","casillero",15,1500,getFecha().getGregorianChange(),ir.findAll().get(4))	
 				
 		}; 
@@ -203,7 +207,7 @@ private Imagen[] ingresarImagenes(){
 	@GetMapping("productosAutomaticos")
 	public String automaticos(Model model) {		
 		
-		contador++;
+	
 		
 		for(Producto p:ingresarProductos())
 		pr.save(p); 
@@ -211,7 +215,7 @@ private Imagen[] ingresarImagenes(){
 		model.addAttribute("productos", pr.findAll());
 		
 		
-		model.addAttribute("comienzo", false);
+		//model.addAttribute("comienzo", false);
 		
 		return "listarProductos";
 	}

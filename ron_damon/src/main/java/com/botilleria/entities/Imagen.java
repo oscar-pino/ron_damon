@@ -1,4 +1,4 @@
-package com.botilleria.models;
+package com.botilleria.entities;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -7,7 +7,7 @@ import javax.persistence.Id;
 
 @Entity
 public class Imagen {
-
+	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private int idImagen;	
@@ -52,5 +52,6 @@ public class Imagen {
 		return "Imagen [idImagen=" + idImagen + ", ruta=" + ruta + ", nombre=" + nombre + "]";
 	}
 
-
+	
 }
+

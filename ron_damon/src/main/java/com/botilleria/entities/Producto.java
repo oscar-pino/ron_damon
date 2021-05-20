@@ -1,4 +1,4 @@
-package com.botilleria.models;
+package com.botilleria.entities;
 
 import java.util.Date;
 
@@ -116,5 +116,4 @@ public class Producto {
 		return "Producto [idProducto=" + idProducto + ", nombre=" + nombre + ", marca=" + marca + ", stock=" + stock
 				+ ", precio=" + precio + ", fechaIngreso=" + fechaIngreso + ", imagen=" + imagen + "]";
 	}	
-
 }

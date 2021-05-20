@@ -81,18 +81,14 @@
 	margin:0 auto;
 }
 
-.reducir{
-	
-	width:15%;
-}
-
-.bebidas{
- 
- width:30%;
- height:14.5%;
- }
- 
  #logo{
  width:50%;
  height:50%;
  }
+ 
+ #productos{
+ position:absolute;
+ top:12;
+ background:yellow;
+ }
+

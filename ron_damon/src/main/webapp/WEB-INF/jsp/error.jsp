@@ -11,12 +11,12 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>  
   <link href="/resources/css/estilos.css" rel="stylesheet">
-  <script type="/resources/js/funciones.js"></script>
+  <script type="/resources/js/scripts.js"></script>
  
 </head>
 <body>
 <div class="container my-5">
-<img width="60%" height="100%" src="/resources/img/error.jpg" alt="pagina de error" id="pagerror">
+<img width="60%" height="100%" src="/resources/img/error.png" alt="pagina de error" id="pagerror">
 </div>
 <footer>
   <div class="container-fluid bg-secondary my-3 py-3">

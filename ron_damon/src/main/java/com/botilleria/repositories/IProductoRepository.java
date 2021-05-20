@@ -1,11 +1,11 @@
 package com.botilleria.repositories;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
 
-import com.botilleria.models.Producto;
+import com.botilleria.entities.Producto;
 
-@Repository
 public interface IProductoRepository extends JpaRepository<Producto,Integer>{
-
+	
+	
 }
+

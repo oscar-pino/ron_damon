@@ -1,4 +1,5 @@
 
+
 let combo;
 let ruta;
 let imagen;
@@ -176,11 +177,11 @@ let mostrar = () => {
 		let seleccionado = $('#selProducto option:selected');
 		
 		if($(seleccionado).text() == 'seleccione bebestible'){
-			ruta = "/resources/img/tragos.jpg";
+			ruta = "/resources/img/tragos.png";
 			alert('Debe elegir otra opcion');
 			}
 		else{
-			ruta = "/resources/img/" + $(seleccionado).text() + ".jpg";
+			ruta = "/resources/img/" + $(seleccionado).text() + ".png";
 			}
 			
 			$(imagen).prop('src',ruta);

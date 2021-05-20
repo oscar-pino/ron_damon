@@ -19,7 +19,7 @@
 <nav class="navbar navbar-expand-sm justify-content-center bg-dark navbar-dark mt-5">
   <!-- Brand/logo -->
   <a class="navbar-brand" href="/">
-    <img id="logo"  src="/resources/img/logo.jpg" alt="esto es un logo" class="rounded-circle">
+    <img id="logo"  src="/resources/img/logo.png" alt="esto es un logo" class="rounded-circle">
   </a>
   
   <!-- Links -->
@@ -68,7 +68,7 @@
         <td>${p.marca}</td>
         <td>${p.stock}</td>
         <td>${p.precio}</td>
-        <td class="reducir"><img class="bebidas" alt="imagen de bebida" src="/resources/img/${p.imagen.nombre}.png"></img></td>               
+        <td class="bebidas"><img height="35" width="35" alt="imagen de bebida" src="/resources/img/${p.imagen.nombre}.png"></img></td>               
        <td><input type="checkbox" class="input-control items" id="${p.idProducto}" /></td>              
       </tr>      
       </c:forEach>   

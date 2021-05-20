@@ -13,13 +13,13 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <link href="/resources/css/estilos.css" rel="stylesheet">
- 	<script src="/resources/js/funciones.js"></script>
+ 	<script src="/resources/js/scripts.js"></script>
 </head>
 <body>
 <nav class="navbar navbar-expand-sm justify-content-center bg-dark navbar-dark mt-5">
   <!-- Brand/logo -->
   <a class="navbar-brand" href="/">
-    <img id="logo"  src="/resources/img/logo.jpg" alt="esto es un logo" class="rounded-circle">
+    <img id="logo"  src="/resources/img/logo.png" alt="esto es un logo" class="rounded-circle">
   </a>
   
   <!-- Links -->
